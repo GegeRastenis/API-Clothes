@@ -29,7 +29,7 @@ router.put('/:id', (req, res)=>{
     const {id}= req.params;
     const updatedProduct = req.body; 
     let products = JSON.parse(fs.readFileSync(filePath, 'utf-8')); 
-    products = products.map(product =>(product.id === Number(id)? {...updatedProduct, ...product} : product)); 
+    products = products.map(product =>(product.id === Number(id)? {...product, ...updatedProduct} : product)); 
     fs.writeFileSync(filePath, JSON.stringify(products, null, 2)); 
     res.json({message: 'Product successfully updated', product: updatedProduct}); 
 

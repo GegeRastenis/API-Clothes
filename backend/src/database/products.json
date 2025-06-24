@@ -1,7 +1,12 @@
 [
   {
-    "id": 1,
-    "product": "Pullover",
-    "size": "small"
+    "product": "Sweater",
+    "size": "Extra Largee",
+    "id": 1
+  },
+  {
+    "id": 2,
+    "product": "Socks",
+    "size": "MEDIUUUM"
   }
 ]
