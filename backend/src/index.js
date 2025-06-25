@@ -2,7 +2,7 @@ const express = require ('express');
 const cors = require ('cors'); 
 const path = require ('path'); 
 const clothesRoutes = require ('./routes/clothes-routes');
-const userRouter = require('./routes/user-routes');
+const usersRouter = require('./routes/user-routes');
 //const dotenv = require('dotenv'); 
 
 //dotenv.config(); 
@@ -17,6 +17,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, '../public'))); 
 
 app.use('/api/clothes', clothesRoutes); 
+app.use('/api/users', usersRouter)
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, '../../public/index.html'))

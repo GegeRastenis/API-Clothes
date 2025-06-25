@@ -8,16 +8,16 @@
 const express = require ('express'); 
 const fs = require ('fs'); 
 const path = require('path');
-const userRouter = express.Router(); 
+const usersRouter = express.Router(); 
 
 const userDatabaseFilePath = path.join(__dirname, '../database/users.json');
 
 // • POST /users/register: Registra usuarios con contraseñas hasheadas.
-//TODO: QUITAR EL USERS DEL ENDPOINT
-userRouter.post('/users/register', async(req, res) => {
+usersRouter.post('/register', async(req, res) => {
+    console.log('REGISTRO');
     //Obtenemos el email y contasena del cuerpo de la solicitud
     const {email, password} = req.body; 
-
+    
     //Verificamos que los campos no estén vacios
     if(!email || !password){
         return res.status(400).json({error: 'El usuario no ingresó los campos requeridos (email o password)'});
@@ -36,7 +36,8 @@ userRouter.post('/users/register', async(req, res) => {
 
 // • POST /users/login: Devuelve un token de autenticación al iniciar
 // sesión correctamente.
-userRouter.post('/users/login', async (req, res) => {
+usersRouter.post('/login', async (req, res) => {
+    console.log('LOGIN');
 
 })
 //TODO: HACER EN MIDDLEWARE
@@ -44,4 +45,4 @@ function authToken(req, res, next){
 
 }
 
-module.exports = userRouter;
+module.exports = usersRouter;

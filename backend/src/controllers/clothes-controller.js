@@ -1,4 +1,4 @@
-const { ProductsModel } = require('../models/clothes-models');
+const ProductsModel = require('../models/clothes-models');
 
 
 const getAllProducts = (req, res) => {
@@ -15,7 +15,6 @@ const getProductById = (req, res) => {
         res.status(404).json({ error: 'Producto no encontrado' });
         return;
     }
-
     res.json(product);
 };
 
@@ -27,7 +26,10 @@ const createProduct = (req, res) => {
 const updateProduct = (req, res) => {
     const { id } = req.params;
     const updatedProduct = ProductsModel.updateProduct(id, req.body);
-    res.status(200).json(updatedProduct);
+    if(!updatedProduct){
+        return res.status(404).json({ error: 'Producto no encontrado' });
+    }
+    res.status(200).json({message: 'Producto actualizado', product: updatedProduct});
 };
 
 const deleteProduct = (req, res) => {
@@ -35,11 +37,10 @@ const deleteProduct = (req, res) => {
     const isDeleted = ProductsModel.deleteProduct(id);
 
     if (!isDeleted) {
-        res.status(404).json({ error: 'Producto no encontrado para ser borrada' });
-        return;
+        return res.status(404).json({ error: 'Producto no encontrado para ser borrado' });
+    } else {
+        return res.status(200).json({message: `Producto con id ${id}, eliminado`});
     }
-
-    res.status(204).send();
 };
 
 module.exports = {
