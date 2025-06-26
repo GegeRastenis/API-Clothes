@@ -1,6 +1,6 @@
 const express = require('express');
 
-export const validateMiddleware = (req, res, next) => {
+const validateMiddleware = (req, res, next) => {
     const { product, size } = req.body;
 
     if (!product || typeof product !== 'string') {
@@ -15,3 +15,4 @@ export const validateMiddleware = (req, res, next) => {
 
     next();
 };
+module.exports = { validateMiddleware };

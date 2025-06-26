@@ -129,3 +129,26 @@ footer {
   margin-top: 40px;
   color: var(--black-color);
 }
+
+.auth {
+  font-size: 1em;
+  color: #b03060;
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btnL{
+  background-color: #ff66a5;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+input {
+  border-radius: 20px;
+  font-weight: bold;
+}
