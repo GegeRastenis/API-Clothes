@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": 2,
+    "name": "Jacket",
+    "description": "ckemdkem",
+    "size": "Large",
+    "price": 15.5,
+    "image": "s"
+  }
+]
