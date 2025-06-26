@@ -1,13 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Jacket",
-    "description": "ckemdkem",
-    "size": "Large",
-    "price": 15.5,
-    "image": ""
-  },
-  {
     "id": 3,
     "name": "Blouse",
     "description": "New blouse",

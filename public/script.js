@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         localStorage.setItem('token', result.token);
         alert('Inicio de sesión exitoso ✔️');
         // Puedes redirigir a otra página si quieres
-        window.location.href = "/inicio.html";
+        window.location.href = "/index.html";
       } else {
         alert(`Error: ${result.error}`);
       }
