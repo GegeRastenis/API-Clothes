@@ -17,10 +17,6 @@ const validateMiddleware = (req, res, next) => {
         return res.status(400).json({error: "El campo 'price' es requerido y deber ser un numero"})
     }
     
-    if(!image || typeof image != 'string'){
-        return res.status(400).json({error: "El campo 'image' debe ser un string"})
-    }
-
     next();
 };
 module.exports = { validateMiddleware };

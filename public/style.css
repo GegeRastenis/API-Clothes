@@ -34,6 +34,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 7px;
 }
 
 nav ul, nav a {
@@ -52,7 +53,7 @@ nav a {
 }
 
 img.logo{
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
