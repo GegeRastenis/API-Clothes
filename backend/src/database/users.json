@@ -1,14 +1,8 @@
 [
   {
-    "id": 1750908068108,
-    "name": "karen",
-    "email": "karen@gmail.com",
-    "password": "$2b$10$H9j32XxDPjD65uKjOlh/nu9uptOpTdGS323PTKbSq8a1b30d4jR3y"
-  },
-  {
-    "id": 1750910390422,
-    "name": "Javier Rubio",
-    "email": "javier@gmail.com",
-    "password": "$2b$10$BRYT.y1xFnYTqPJ6CzIPy.HINoDRtQThJ2y9ZyG.MLeTdUVZyBW5a"
+    "id": 1750915988847,
+    "name": "Ana Torres",
+    "email": "anaTorres@gmail.com",
+    "password": "$2b$10$98qEb5TxgGaopbqO.DmP6epOYt8DiCkk09ZDGSiaNlDMibU8T7QPi"
   }
 ]
