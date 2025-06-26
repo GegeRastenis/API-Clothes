@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <main class="administrator-main">
+        <h2>ADMINISTRADOR</h2>
+        <section class="administrator">
+            <!-- <button class="button-pink">Agregar Producto</button>
+            <button class="button-pink">Actualizar Producto</button>
+            <button class="button-pink">Eliminar Producto</button> -->
+            <h3>Catalogo de productos</h3>
+            <section class="products">
+                <div class="products-list" id="products-list">
+                    
+                </div>
+        
+                <form id="edit-form">
+                    <h3>Editar Producto</h3>
+                    <input type="hidden" id="edit-id" />
+                    <label>Nombre:
+                        <input type="text" id="edit-name" required />
+                    </label>
+                    <label>Precio:
+                        <input type="number" id="edit-price" required />
+                    </label>
+                    <label>Tamaño:
+                        <input type="text" id="edit-size" required/>
+                    </label>
+                    <label>Imagen URL:
+                        <input type="text" id="edit-image" />
+                    </label>
+                    <button class="button-pink" type="submit">Guardar cambios</button>
+                    <button class="button-pink" type="submit" id="cancel-edit">Cancelar</button>
+                </form>
+            </section>
+            
+        </section>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>

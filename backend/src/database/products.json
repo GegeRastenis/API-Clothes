@@ -1,6 +1,62 @@
 [
   {
+    "id": 1,
+    "name": "Camiseta1",
+    "description": "New blouse",
+    "size": "Large",
+    "price": 16,
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Short2",
+    "description": "New blouse",
+    "size": "M",
+    "price": 50,
+    "image": ""
+  },
+  {
     "id": 3,
+    "name": "Pantalon",
+    "description": "New blouse",
+    "size": "Small",
+    "price": 15,
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Blouse",
+    "description": "New blouse",
+    "size": "Large",
+    "price": 15.5,
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Blouse",
+    "description": "New blouse",
+    "size": "Large",
+    "price": 15.5,
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Blouse",
+    "description": "New blouse",
+    "size": "Medium",
+    "price": 16,
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Blouse",
+    "description": "New blouse",
+    "size": "Large",
+    "price": 15.5,
+    "image": ""
+  },
+  {
+    "id": 8,
     "name": "Blouse",
     "description": "New blouse",
     "size": "Large",
