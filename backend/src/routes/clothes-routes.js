@@ -3,10 +3,12 @@ const fs = require ('fs');
 const path = require ('path'); 
 const router = express.Router(); 
 const { getAllProducts, getProductById, createProduct, updateProduct, deleteProduct } = require('../controllers/clothes-controller');
+const {validateMiddleware} = require ('../middlewares/validate-middleware')
+
 
 router.get('/', getAllProducts);
 router.get('/:id', getProductById);
-router.post('/', createProduct);
+router.post('/',validateMiddleware, createProduct);
 router.put('/:id', updateProduct);
 router.delete('/:id', deleteProduct);
 // router.get('/', (req, res)=>{

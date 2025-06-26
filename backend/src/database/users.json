@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1750908068108,
+    "name": "karen",
+    "email": "karen@gmail.com",
+    "password": "$2b$10$H9j32XxDPjD65uKjOlh/nu9uptOpTdGS323PTKbSq8a1b30d4jR3y"
+  },
+  {
+    "id": 1750910390422,
+    "name": "Javier Rubio",
+    "email": "javier@gmail.com",
+    "password": "$2b$10$BRYT.y1xFnYTqPJ6CzIPy.HINoDRtQThJ2y9ZyG.MLeTdUVZyBW5a"
+  }
+]
