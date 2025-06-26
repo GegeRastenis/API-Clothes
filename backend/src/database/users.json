@@ -10,5 +10,11 @@
     "name": "fiorella",
     "email": "fiorellaroma98@gmail.com",
     "password": "$2b$10$ZFbgSsK7FKW.raqKJYv68Ons6Onqn9Ir2v8gAcpQMxFJjrhY398DS"
+  },
+  {
+    "id": 1750964725797,
+    "name": "New",
+    "email": "new@gmail.com",
+    "password": "$2b$10$FzFqjOcukGw/D5HEr.1ZEOpHbxLt1SFJDMrZzcrx9i7vKxxXqG0d."
   }
 ]
