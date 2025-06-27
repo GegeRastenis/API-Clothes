@@ -3,6 +3,7 @@ const cors = require ('cors');
 const path = require ('path'); 
 const clothesRoutes = require ('./routes/clothes-routes');
 const usersRouter = require('./routes/user-routes');
+const authMiddleware = require('./middlewares/auth-middleware');
 //const dotenv = require('dotenv'); 
 
 //dotenv.config(); 
@@ -26,6 +27,12 @@ app.get('/', (req, res)=>{
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/inicio.html'))
 })
+//authMiddleware,
+app.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/admin.html'));
+});
+
+
 
 app.listen(PORT, ()=>{
     console.log(`Servidor escuchando en: http://localhost:${PORT}`);

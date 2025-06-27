@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Pantalon",
     "description": "New blouse",
-    "size": "Small",
+    "size": "Medium",
     "price": 15,
     "image": ""
   },
@@ -61,6 +61,14 @@
     "description": "New blouse",
     "size": "Large",
     "price": 15.5,
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Camiseta2",
+    "description": {},
+    "price": 50,
+    "size": "Medium",
     "image": ""
   }
 ]

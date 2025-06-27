@@ -77,6 +77,56 @@ document.addEventListener('DOMContentLoaded', async() => {
         }
     });
 
+          //Evento para editar producto
+    document.querySelectorAll('.add-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const form = document.getElementById('add-form');
+        form.style.display = 'flex'; // Mostrar el formulario
+        form.reset(); // Limpiar campos del formulario (requiere <form id="add-form">)
+
+        // También puedes limpiar los campos manualmente si no usas <form>
+        document.getElementById('add-name').value = '';
+        document.getElementById('add-description').value = '';
+        document.getElementById('add-price').value = '';
+        document.getElementById('add-size').value = '';
+        document.getElementById('add-image').value = '';
+      });
+    });
+
+        document.getElementById('add-form').addEventListener('submit', async(e) => {
+        e.preventDefault();
+        const productId = document.getElementById('edit-id').value;
+        const createProduct = {
+            name: document.getElementById('add-name').value,
+            description: document.getElementById('add-description'),
+            price: parseFloat(document.getElementById('add-price').value),
+            size: document.getElementById('add-size').value,
+            image: document.getElementById('add-image').value
+        };
+
+        try {
+            const res = await fetch(`/api/clothes/`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(createProduct)
+            });
+
+            const result = await res.json();
+
+            if (res.ok) {
+                location.reload();
+                alert('Producto registrado exitosamente ✔️');
+                document.getElementById('add-form').reset();
+                document.getElementById('add-form').style.display = 'none';
+            } else {
+                alert(`Error: ${result.error}`);
+            }
+        } catch (error) {
+            console.error(error);
+            alert('Error al registrar el producto');
+        }
+    });
+
     document.querySelectorAll('.delete-btn').forEach(button => {
         button.addEventListener('click', async(e) => {
             const idProduct = e.target.dataset.id;
@@ -112,3 +162,11 @@ document.getElementById('cancel-edit').addEventListener('click', () => {
   form.reset(); // Limpia los campos
   form.style.display = 'none'; // Oculta el formulario
 });
+
+document.getElementById('cancel-add').addEventListener('click', () => {
+  const form = document.getElementById('add-form');
+  form.reset(); // Limpia los campos
+  form.style.display = 'none'; // Oculta el formulario
+});
+
+

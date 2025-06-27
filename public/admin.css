@@ -81,3 +81,11 @@ input {
     text-align: right;
     display: none;
 }
+
+#add-form{
+    margin: 20px 0;
+    background-color: var(--second-pink-color);
+    padding: 20px;
+    text-align: left  ;
+    display: none;
+}

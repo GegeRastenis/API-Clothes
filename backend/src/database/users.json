@@ -16,5 +16,11 @@
     "name": "New",
     "email": "new@gmail.com",
     "password": "$2b$10$FzFqjOcukGw/D5HEr.1ZEOpHbxLt1SFJDMrZzcrx9i7vKxxXqG0d."
+  },
+  {
+    "id": 1750994867524,
+    "name": "Carlos Flores",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$/IeG4lKiv4SQzm1IcBqMeO.12xMJIpVzBtDNe3NYgkNmyh2tow59W"
   }
 ]

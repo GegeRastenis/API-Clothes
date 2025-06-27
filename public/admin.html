@@ -11,8 +11,8 @@
     <main class="administrator-main">
         <h2>ADMINISTRADOR</h2>
         <section class="administrator">
-            <!-- <button class="button-pink">Agregar Producto</button>
-            <button class="button-pink">Actualizar Producto</button>
+            <button class="add-btn button-pink">Agregar Producto</button>
+            <!-- <button class="button-pink">Actualizar Producto</button>
             <button class="button-pink">Eliminar Producto</button> -->
             <h3>Catalogo de productos</h3>
             <section class="products">
@@ -37,6 +37,27 @@
                     </label>
                     <button class="button-pink" type="submit">Guardar cambios</button>
                     <button class="button-pink" type="submit" id="cancel-edit">Cancelar</button>
+                </form>
+
+                <form id="add-form">
+                    <h3>Agregar Producto</h3>
+                    <label>Nombre:
+                        <input type="text" id="add-name" required />
+                    </label>
+                    <label>Descripción:
+                        <input type="text" id="add-description" required />
+                    </label>
+                    <label>Precio:
+                        <input type="number" id="add-price" required />
+                    </label>
+                    <label>Tamaño:
+                        <input type="text" id="add-size" required/>
+                    </label>
+                    <label>Imagen URL:
+                        <input type="text" id="add-image" />
+                    </label>
+                    <button class="button-pink" type="submit">Guardar</button>
+                    <button class="button-pink" type="submit" id="cancel-add">Cancelar</button>
                 </form>
             </section>
             
