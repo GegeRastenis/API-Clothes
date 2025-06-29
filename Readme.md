@@ -5,8 +5,13 @@ API REST desarrollada para un trabajo práctico final por alumnas del curso de P
 ## 🛠️ Tecnologías utilizadas
 
 - Node.js / Express
+- Bcrypt,
+- Cors,
+- Jsonwebtoken
 - JSON como formato de intercambio de datos
 - Postman para la prueba de rutas antes del despliegue
+- Render para el despliegue de la página web y API a un dominio
+  
 
 ## 📦 Funcionalidad principal
 
@@ -17,9 +22,12 @@ La API permite realizar operaciones sobre un catálogo de productos de ropa, inc
 - Obtener productos por ID
 - Actualizar un producto existente
 - Eliminar un producto
+- Registrar usuario
+- Inicio de sesión de un usuario
+- Ruta protegida para el administrador
 
 ## 📁 Estructura del proyecto
-
+```
 API-CLOTHES/  
 │
 ├── backend/  
@@ -51,12 +59,15 @@ API-CLOTHES/
 ├── node_modules/                            # Dependencias del proyecto  
 │
 ├── public/  
-│   └── image.png                            # Imagen decorativa o de muestra  
+│   └── image.png                            # Imagen decorativa o de muestra
+│   └── index.html                           # Pagina html de la sección principal de la página web
+│   └── style.css                           # Contiene todos los estilos para el html
+│   └── script.js                           # Contiene la lógica para poder conectar el frontend con el backend y hacer llamadas a la API creada
 │
 ├── package.json                             # Info del proyecto y dependencias  
 ├── package-lock.json                        # Detalle de versiones exactas  
 └── README.md                                # Documentación del proyecto  
-
+```
 
 ## 🔗 Endpoints disponibles
 
@@ -67,6 +78,9 @@ API-CLOTHES/
 | POST   | /api/clothes       | Crea un nuevo producto              |
 | PUT    | /api/clothes/:id   | Actualiza un producto existente     |
 | DELETE | /api/clothes/:id   | Elimina un producto                 |
+| POST   | /api/users/register| Registra a un usuario nuevo         |
+| POST   | /api/users/login   | Inicio de sesión de usuario         |
+
 
 ### 📌 Ejemplo de producto
 
