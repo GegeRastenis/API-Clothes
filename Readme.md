@@ -79,6 +79,7 @@ API-CLOTHES/
   "price": 16,
   "image": ""
 }
+```
 ▶️ Cómo correr el proyecto
 Clonar el repositorio:
 
