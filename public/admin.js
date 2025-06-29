@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         e.preventDefault();
         const createProduct = {
             name: document.getElementById('add-name').value,
-            description: document.getElementById('add-description'),
+            description: document.getElementById('add-description').value,
             price: parseFloat(document.getElementById('add-price').value),
             size: document.getElementById('add-size').value,
             image: document.getElementById('add-image').value

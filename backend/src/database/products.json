@@ -44,68 +44,7 @@
     "name": "Short",
     "description": "New blouse",
     "size": "Large",
-<<<<<<< HEAD
     "price": 32,
     "image": "https://s3-us-west-1.amazonaws.com/calzzapato/zoom/09FNBN-3.jpg"
-=======
-    "price": 15.5,
-    "image": ""
-  },
-  {
-    "id": 8,
-    "name": "Blouse",
-    "description": "New blouse",
-    "size": "Large",
-    "price": 15.5,
-    "image": ""
-  },
-  {
-    "id": 9,
-    "name": "Camiseta2",
-    "description": {},
-    "price": 35,
-    "size": "Medium",
-    "image": ""
-  },
-  {
-    "id": 10,
-    "name": "Pantalon",
-    "description": "azul",
-    "price": 50,
-    "size": "M",
-    "image": ""
-  },
-  {
-    "id": 12,
-    "name": "Pantalon",
-    "description": "azul",
-    "price": 50,
-    "size": "L",
-    "image": ""
-  },
-  {
-    "id": 13,
-    "name": "Pantalon",
-    "description": "azul",
-    "price": 50,
-    "size": "M",
-    "image": ""
-  },
-  {
-    "id": 14,
-    "name": "Pantalon",
-    "description": "azul",
-    "price": 50,
-    "size": "L",
-    "image": ""
-  },
-  {
-    "id": 15,
-    "name": "Pantalon",
-    "description": "azul",
-    "price": 50,
-    "size": "L",
-    "image": ""
->>>>>>> 1e9c988f0308e53de02a7f486354b3a7fa626e7e
   }
 ]
