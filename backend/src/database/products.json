@@ -5,11 +5,11 @@
     "description": "New blouse",
     "size": "Large",
     "price": 16,
-    "image": ""
+    "image": "https://resources.sanborns.com.mx/imagenes-sanborns-ii/1200/7506609457113.jpg?scale=500&qlty=75"
   },
   {
     "id": 2,
-    "name": "Short2",
+    "name": "Blusa",
     "description": "New blouse",
     "size": "M",
     "price": 50,
@@ -17,58 +17,34 @@
   },
   {
     "id": 3,
-    "name": "Pantalon",
+    "name": "Sueter",
     "description": "New blouse",
     "size": "Medium",
     "price": 15,
-    "image": ""
+    "image": "https://media.gotrendier.mx/media/p/2023/08/22/n_a7fd36e6-4166-11ee-bfec-12efb40ac69d.jpeg"
   },
   {
     "id": 4,
-    "name": "Blouse",
+    "name": "Pants",
     "description": "New blouse",
     "size": "Large",
-    "price": 15.5,
-    "image": ""
-  },
-  {
-    "id": 5,
-    "name": "Blouse",
-    "description": "New blouse",
-    "size": "Large",
-    "price": 15.5,
-    "image": ""
+    "price": 15,
+    "image": "https://s3-us-west-1.amazonaws.com/calzzapato/zoom/09H0Q1-1.jpg"
   },
   {
     "id": 6,
-    "name": "Blouse",
+    "name": "Short",
     "description": "New blouse",
     "size": "Medium",
     "price": 16,
-    "image": ""
+    "image": "https://resources.claroshop.com/medios-plazavip/fotos/productos_sears1/original/4304026.jpg"
   },
   {
     "id": 7,
-    "name": "Blouse",
+    "name": "Short",
     "description": "New blouse",
     "size": "Large",
-    "price": 15.5,
-    "image": ""
-  },
-  {
-    "id": 8,
-    "name": "Blouse",
-    "description": "New blouse",
-    "size": "Large",
-    "price": 15.5,
-    "image": ""
-  },
-  {
-    "id": 9,
-    "name": "Camiseta2",
-    "description": {},
-    "price": 50,
-    "size": "Medium",
-    "image": ""
+    "price": 32,
+    "image": "https://s3-us-west-1.amazonaws.com/calzzapato/zoom/09FNBN-3.jpg"
   }
 ]

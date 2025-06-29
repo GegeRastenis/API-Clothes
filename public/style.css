@@ -82,6 +82,29 @@ img.logo{
   margin: 20px 0;
   color: #555;
 }
+.contact-main, .shop-main {
+  background-color: var(--second-pink-color);
+  text-align: center;
+  padding: 60px 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+}
+
+.contact-main h2, .shop-main h2{
+  font-size: 3.5em;
+  color: var(--black-color);
+}
+
+.contact-main p{
+  margin-top: 10px;
+  font-size: 1.5em;
+  width: 50%;
+  color: black;
+}
 
 .button-pink{
   background-color: var(--main-pink-color);
@@ -112,15 +135,87 @@ section h2{
   background-color: var(--second-pink-color);
   border: 1px solid #ffe6f0;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 200px;
 }
 
 .product img {
   width: 150px;
-  height: 200px;
+  height: auto;
   /* height: 60px; */
   border-radius: 10px;
+}
+.container-info-cards{
+  display: flex;
+  padding: 60px 20px;
+  justify-content: center;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: var(--second-pink-color) 1px solid;
+}
+.info-card:hover{
+  transform: translateY(-5px);
+}
+.icons{
+  font-size: 2rem;
+}
+
+.phone-card{
+  background-color: var(--main-pink-color);
+  color: white;
+}
+.email-card{
+  background-color: var(--second-pink-color);
+}
+.address-card{
+  background-color: var(--white-color);
+}
+
+iframe{
+  width: 90%;
+  padding: 60px 20px;
+}
+
+.container-team-cards{
+  display: flex;
+
+}
+
+.info-card-team{
+  width: 25%;
+  border-radius: 50px;
+}
+
+.team-members{
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.team-members h2{
+  margin-bottom: 50px;
+}
+.team-members h3{
+  margin-top: 50px;
+}
+img.photo-team-member{
+  width: 80px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 10px 0;
 }
 
 footer {
