@@ -32,26 +32,7 @@ const authMiddleware = (req, res, next) => {
   next();
 };
 
-/*const authMiddleware = (req, res, next) => {
- const authHeader = req.headers['authorization'];
-  const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7) : null;
 
-  if (!token) {
-    return res.status(401).json({ error: 'Token requerido' });
-  }
-
-  try {
-    const decoded = jwt.verify(token, secretKey);
-    if (decoded.email !== 'admin@gmail.com') {
-      return res.status(403).json({ error: 'Solo el administrador puede acceder' });
-    }
-
-    req.user = decoded; // puedes usar req.user si luego quieres mostrar info del admin
-    next();
-  } catch {
-    return res.status(403).json({ error: 'Token inválido o expirado' });
-  }
-};*/
 
 module.exports = authMiddleware;
 
