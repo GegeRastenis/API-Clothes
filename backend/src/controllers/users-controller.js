@@ -42,9 +42,21 @@ const loginUser = async (req, res) => {
     return res.status(401).json({ error: 'Credenciales inválidas' });
   }
 
-  const token = jwt.sign({ id: user.id, email: user.email }, secretKey, { expiresIn: '1h' });
+  const token = jwt.sign({ email: user.email }, secretKey, { expiresIn: '1h' });
 
-  res.json({ message: 'Inicio de sesión exitoso', token });
+  // Si es el admin, ponemos cookie y devolvemos token en la MISMA respuesta
+  if (email === 'admin@gmail.com') {
+    return res
+      .cookie('jwt', token, {
+        httpOnly: true,
+        sameSite: 'lax',      // usa 'none' + secure con HTTPS/dom. distintos
+        maxAge: 60 * 60 * 1000
+      })
+      .json({ message: 'Inicio de sesión exitoso', token });
+  }
+
+  // Resto de usuarios
+  return res.json({ message: 'Inicio de sesión exitoso', token });
 };
 
 module.exports = { registerUser, loginUser };

@@ -1,3 +1,5 @@
+
+  
 //Muestra los productos obteniendolos de la api, esto se hace desde que carga la pagina principal
 document.addEventListener('DOMContentLoaded', async() => {
   const productsContainer = document.getElementById('products-list');
@@ -102,11 +104,11 @@ document.addEventListener('DOMContentLoaded', async() => {
       document.getElementById('add-form').addEventListener('submit', async(e) => {
         e.preventDefault();
         const createProduct = {
-          name: document.getElementById('add-name').value,
-          description: document.getElementById('add-description').value,
-          price: parseFloat(document.getElementById('add-price').value),
-          size: document.getElementById('add-size').value,
-          image: document.getElementById('add-image').value
+            name: document.getElementById('add-name').value,
+            description: document.getElementById('add-description'),
+            price: parseFloat(document.getElementById('add-price').value),
+            size: document.getElementById('add-size').value,
+            image: document.getElementById('add-image').value
         };
 
       try {

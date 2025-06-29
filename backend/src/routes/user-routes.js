@@ -7,9 +7,9 @@
 // su uso.
 const express = require ('express'); 
 const usersRouter = express.Router(); 
-
+const authMiddleware = require('../middlewares/auth-middleware');
 const { registerUser, loginUser } = require('../controllers/users-controller');
-
+const path = require ('path');
 
 
 
@@ -19,6 +19,8 @@ usersRouter.post('/register', registerUser);
 // • POST /users/login: Devuelve un token de autenticación al iniciar
 // sesión correctamente.
 usersRouter.post('/login', loginUser);
+
+
 
 //TODO: HACER EN MIDDLEWARE
 function authToken(req, res, next){

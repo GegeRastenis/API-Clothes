@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/admin.css">
 </head>
 <body>
+<<<<<<< HEAD:public/admin.html
     <header>
         <nav>
             <div>
@@ -29,6 +30,24 @@
         </nav>
   </header>
     <main class="administrator-main">
+=======
+<script>
+    const token = localStorage.getItem('token');
+
+    try {
+        const payload = JSON.parse(atob(token.split('.')[1]));
+
+        if (payload.email !== 'admin@gmail.com') {
+        alert('Acceso restringido');
+        window.location.href = '/login';
+        }
+    } catch {
+        alert('Sesión inválida');
+        window.location.href = '/inicio.html';
+    }
+</script>
+    <main class="administrator-main" id="app">
+>>>>>>> 1e9c988f0308e53de02a7f486354b3a7fa626e7e:private/admin.html
         <h2>ADMINISTRADOR</h2>
         <section class="administrator">
             <!-- <button class="button-pink">Actualizar Producto</button>
@@ -85,6 +104,6 @@
             
         </section>
     </main>
-    <script src="admin.js"></script>
+    <script src="/admin.js"></script>
 </body>
 </html>
