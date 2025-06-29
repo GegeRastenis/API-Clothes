@@ -4,6 +4,10 @@ const path = require ('path');
 const clothesRoutes = require ('./routes/clothes-routes');
 const usersRouter = require('./routes/user-routes');
 const authMiddleware = require('./middlewares/auth-middleware');
+const cookieParser = require('cookie-parser')
+
+
+
 //const dotenv = require('dotenv'); 
 
 //dotenv.config(); 
@@ -14,6 +18,8 @@ const PORT = 3000;
 app.use(express.json()); 
 
 app.use(cors()); 
+
+app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, '../../public'))); 
 
@@ -27,11 +33,10 @@ app.get('/', (req, res)=>{
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/inicio.html'))
 })
-//authMiddleware,
-app.get('/admin', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public/admin.html'));
-});
 
+app.get('/admin',authMiddleware, (req, res) => {
+    res.sendFile(path.join(__dirname, '../../private/admin.html'));
+});
 
 
 app.listen(PORT, ()=>{

@@ -50,13 +50,31 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     });
 
     const result = await res.json();
-    console.log(result);
     if (res.ok) {
       // Guardamos el token en localStorage
       localStorage.setItem('token', result.token);
       alert('Inicio de sesión exitoso ✔️');
-      // Puedes redirigir a otra página si quieres
-      window.location.href = "/index.html";
+      const token = localStorage.getItem('token');
+      const payload = JSON.parse(atob(token.split('.')[1]));
+       if (payload.email === 'admin@gmail.com') {
+ 
+        fetch('/admin', {
+        headers: { Authorization: `Bearer ${token}` }
+      })
+      .then(r => {
+        if (!r.ok) throw new Error('No autorizado');
+        return r.text();           // HTML completo
+      })
+      .then(html => {
+        document.open();
+        document.write(html);
+        document.close();
+        history.pushState(null, '', '/admin');
+      })
+      .catch(() => alert('Acceso denegado'));
+    } else {
+      window.location.href = '/index.html';
+    } 
     } else {
       alert(`Error: ${result.error}`);
     }
@@ -65,5 +83,9 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     alert('No se pudo iniciar sesión');
   }
 });
+
+
+
+
 
  

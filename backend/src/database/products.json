@@ -67,8 +67,48 @@
     "id": 9,
     "name": "Camiseta2",
     "description": {},
-    "price": 50,
+    "price": 35,
     "size": "Medium",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Pantalon",
+    "description": "azul",
+    "price": 50,
+    "size": "M",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "name": "Pantalon",
+    "description": "azul",
+    "price": 50,
+    "size": "L",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "name": "Pantalon",
+    "description": "azul",
+    "price": 50,
+    "size": "M",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "name": "Pantalon",
+    "description": "azul",
+    "price": 50,
+    "size": "L",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "name": "Pantalon",
+    "description": "azul",
+    "price": 50,
+    "size": "L",
     "image": ""
   }
 ]
