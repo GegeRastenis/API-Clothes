@@ -1,12 +1,12 @@
 # 👗 API - CLOTHES
 
-API REST desarrollada para un trabajo práctico final por alumnas del curso de Programación BackEnd del Instituto ADA ITW. Su funcionalidad nos permite gestionar acciones sobre productos de ropa a través de operaciones CRUD (Create, Read, Update, Delete).
+API REST desarrollada para un trabajo práctico final por alumnas del curso de Programación BackEnd del Instituto ADA ITW. Su funcionalidad nos permite gestionar acciones sobre productos de ropa a través de operaciones CRUD (Create, Read, Update, Delete)
 
 ## 🛠️ Tecnologías utilizadas
 
 - Node.js / Express
-- Bcrypt,
-- Cors,
+- Bcrypt
+- Cors
 - Jsonwebtoken
 - JSON como formato de intercambio de datos
 - Postman para la prueba de rutas antes del despliegue
@@ -108,12 +108,13 @@ Configurar las variables de entorno (archivo .env):
 
 PORT=3000
 http://localhost:3000/
+
 Iniciar el servidor:
 npm start
 
 
 🧪 Testing
-Se pueden realizar pruebas con Postman para verificar los endpoints.
+Se pueden realizar pruebas con Postman para verificar los endpoints
 
 🤝 Colaboradores
 
