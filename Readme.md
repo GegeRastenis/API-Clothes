@@ -103,6 +103,7 @@ cd API-Clothes
 Instalar dependencias:
 
 npm install express bcrypt cookie-parser cors jsonwebtoken
+
 Configurar las variables de entorno (archivo .env):
 
 PORT=3000
