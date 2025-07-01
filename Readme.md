@@ -115,7 +115,8 @@ npm start
 Se pueden realizar pruebas con Postman para verificar los endpoints.
 
 🤝 Colaboradores
-Fiorella Rodríguez - https://github.com/fiorellam
-Constanza Riveros Ayala  - https://github.com/constanzagra
-Ana Karen Prieto - https://github.com/kprieto
-Giselle Rastenis - https://github.com/GegeRastenis
+
+- [Fiorella Rodríguez](https://github.com/fiorellam)  
+- [Constanza Riveros Ayala](https://github.com/constanzagra)  
+- [Ana Karen Prieto](https://github.com/kprieto)  
+- [Giselle Rastenis](https://github.com/GegeRastenis)
