@@ -100,9 +100,9 @@ Clonar el repositorio:
 git clone https://github.com/GegeRastenis/API-Clothes.git
 cd API-Clothes
 
-Instalar dependencias:!!!!!
+Instalar dependencias:
 
-npm install
+npm install express bcrypt cookie-parser cors jsonwebtoken
 Configurar las variables de entorno (archivo .env):
 
 PORT=3000
@@ -118,4 +118,4 @@ Se pueden realizar pruebas con Postman para verificar los endpoints.
 Fiorella Rodríguez - https://github.com/fiorellam
 Constanza Riveros Ayala  - https://github.com/constanzagra
 Ana Karen Prieto - https://github.com/kprieto
-Gisele Rastenis - https://github.com/GegeRastenis
+Giselle Rastenis - https://github.com/GegeRastenis
