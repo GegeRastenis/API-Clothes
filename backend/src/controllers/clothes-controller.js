@@ -1,3 +1,4 @@
+//Se encarga de manejar todo lo referente al modelo y el routes
 const ProductsModel = require('../models/clothes-models');
 
 

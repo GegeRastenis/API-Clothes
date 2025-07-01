@@ -1,3 +1,4 @@
+//Se encarga de validar que los datos para crear un producto, esten completos
 const express = require('express');
 
 const validateMiddleware = (req, res, next) => {

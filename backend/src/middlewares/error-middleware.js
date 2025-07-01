@@ -1,3 +1,4 @@
+//Maneja errores
 const express = require('express');
 
 const errorMiddleware = (err, req, res, next) => {

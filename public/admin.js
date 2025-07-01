@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', async() => {
           }
         })
       })
-
+      //Evento para editar un producto
       document.getElementById('edit-form').addEventListener('submit', async(e) => {
         e.preventDefault();
         const productId = document.getElementById('edit-id').value;
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         }
       });
 
-      //Evento para editar producto
+      //Evento para identificar cuando se da click al botón de agregar producto
       document.querySelectorAll('.add-btn').forEach(button => {
         button.addEventListener('click', () => {
           const form = document.getElementById('add-form');
@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         };
 
       try {
+        //FETCH a api 
         const res = await fetch(`/api/clothes/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -134,6 +135,7 @@ document.addEventListener('DOMContentLoaded', async() => {
       }
     });
 
+    //Detecta el evento on click para eliminar producto
       document.querySelectorAll('.delete-btn').forEach(button => {
         button.addEventListener('click', async(e) => {
           const idProduct = e.target.dataset.id;
@@ -163,13 +165,13 @@ document.addEventListener('DOMContentLoaded', async() => {
     productsContainer.innerHTML = `<p>No se pudieron cargar los productos.</p>`;
   }
 });
-
+//Evento para cancelar edicion de un producto
 document.getElementById('cancel-edit').addEventListener('click', () => {
   const form = document.getElementById('edit-form');
   form.reset(); // Limpia los campos
   form.style.display = 'none'; // Oculta el formulario
 });
-
+//Evento para cancelar el agregar un producto
 document.getElementById('cancel-add').addEventListener('click', () => {
   const form = document.getElementById('add-form');
   form.reset(); // Limpia los campos

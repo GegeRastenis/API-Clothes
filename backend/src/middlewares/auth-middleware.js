@@ -1,3 +1,6 @@
+//Se encarga de validar los tokens de los usuarios
+//Especificamente solo permitir al administrador poder 
+// agregar, editar, actualizar o eliminar productos
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const secretKey = 'mi_clave_secreta'; // Usa variable de entorno en producción
@@ -32,7 +35,4 @@ const authMiddleware = (req, res, next) => {
   next();
 };
 
-
-
 module.exports = authMiddleware;
-

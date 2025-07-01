@@ -1,3 +1,4 @@
+//Se encarga de manejar toda la logica CRUD de los productos
 const fs = require('fs');
 const path = require('path');
 

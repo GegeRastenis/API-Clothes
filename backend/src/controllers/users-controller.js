@@ -1,4 +1,4 @@
-
+//Se encarga de las rutas de el inicio de sesion y registro de usuarios
 const jwt = require('jsonwebtoken');
 const secretKey = 'mi_clave_secreta';
 const bcrypt = require('bcrypt');
@@ -25,9 +25,6 @@ const registerUser = async (req, res) => {
 
   res.status(201).json({ message: 'Usuario registrado con éxito' });
 };
-
-
-
 
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
