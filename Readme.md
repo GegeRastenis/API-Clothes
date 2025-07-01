@@ -96,26 +96,32 @@ API-CLOTHES/
 ```
 ▶️ Cómo correr el proyecto
 Clonar el repositorio:
-
-git clone https://github.com/GegeRastenis/API-Clothes.git
+```
+git clone https://github.com/GegeRastenis/API-Clothes.git  
 cd API-Clothes
-
+```
 Instalar dependencias:
-
+```
 npm install express bcrypt cookie-parser cors jsonwebtoken
+```
 
 Configurar las variables de entorno (archivo .env):
 
+```
 npm install dotenv
+```
 
 PORT=3000
 
 http://localhost:3000/
 
 Iniciar el servidor:
-
+```
 npm start
+```
 
+➕ Agregar un producto desde el frontend
+1. Se debe iniciar sesión como administrador: admin@gmail.com
 
 🧪 Testing
 Se pueden realizar pruebas con Postman para verificar los endpoints
