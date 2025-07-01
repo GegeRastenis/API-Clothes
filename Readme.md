@@ -106,10 +106,14 @@ npm install express bcrypt cookie-parser cors jsonwebtoken
 
 Configurar las variables de entorno (archivo .env):
 
+npm install dotenv
+
 PORT=3000
+
 http://localhost:3000/
 
 Iniciar el servidor:
+
 npm start
 
 
