@@ -121,7 +121,12 @@ npm start
 ```
 
 ➕ Agregar un producto desde el frontend
-1. Se debe iniciar sesión como administrador: admin@gmail.com
+- Se debe iniciar sesión como administrador: admin@gmail.com
+- Contraseña: admin
+- Dar click en botón de "Agregar Producto"
+- Ingresar la información que se pide en el formulario
+- En la sección de ingresar imagen del producto, se debe poner una url de una imagen de internet, que sea de extensión jpg, png, jpeg. Ejemplo: https://s3-us-west-1.amazonaws.com/calzzapato/zoom/09H0Q1-1.jpg
+- Finalmente dar click en el botón de "Guardar"
 
 🧪 Testing
 Se pueden realizar pruebas con Postman para verificar los endpoints
